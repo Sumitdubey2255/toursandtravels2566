@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/rely_logo.png">
+    <!-- Author Meta -->
+    <meta name="author" content="">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Sahyog Mantra</title>
+    <link rel="icon" href="./img/rely_logo.png" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!--CSS============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/nice-select.css">					
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        
+    <style>
+        
+        :root{
+            --orange:#02c560;
+            /* --orange:#ffa500; */
+        }
+
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            outline: none; border: none;
+            text-decoration: none;
+            transition: all .2s linear;
+        }
+
+        *::selection{
+            background: var(--orange);
+            color: #fff;
+        }
+
+        html{
+            /* font-size: 62.5%; */
+            overflow-x: hidden;
+            scroll-padding-top: 6rem;
+            scroll-behavior: smooth;
+        }
+
+        /* section{
+            padding: 2rem 9%;
+        } */
+
+        .btn{
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: var(--orange);
+            color: #fff;
+            padding: .8rem 3rem;
+            border: .2rem solid var(--orange);
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+
+        .btn:hover{
+            background: rgba(255, 165, 0,.2);
+            color: var(--orange);
+        }
+
+        .home{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            position: relative;
+            z-index: 0;
+        }
+
+        .home .content{
+            text-align: center;
+        }
+
+        .home .content h3{
+            font-size: 4.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+        }
+
+        .home .content p{
+            font-size: 2.5rem;
+            color: #fff;
+            padding: .5rem 0;
+        }
+
+        .home .video-container video{
+            position: absolute;
+            top: 0; left: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .home .controls{
+            padding: 0.5rem;
+            border-radius: 6rem;
+            background: rgba(0,0,0,.7);
+            position: relative;
+            top: -10rem;
+        }
+
+        .home .controls .vid-btn{
+            height: 0.9rem;
+            width: 1rem;
+            display: inline-block;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+            margin: 0 .5rem;
+        }
+
+        .home .controls .vid-btn.active{
+            background: var(--orange);
+        }
+
+        /* media quries */
+
+        @media (max-width:1200px){
+            html{
+                font-size: 55%;
+            }
+        }
+
+        @media (max-width:991px){
+            header{
+                padding: 2rem;
+            }
+
+            section{
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width:768px){
+            #menu-bar{
+                display: initial;
+            }
+
+            header .navbar{
+                position: absolute;
+                top: 100%; right: 0; left: 0;
+                background: #333;
+                border-top: .1rem solid rgba(255,255,255,.2);
+                padding: 1rem 2rem;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            }
+
+            header .navbar.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);;
+            }
+
+            header .navbar a{
+                display: block;
+                border-radius: .5rem;
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+                background: #222;
+            }
+        }
+
+        @media (max-width:450px){
+            html{
+                font-size: 50%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="protfolio-wrap">
+
+        <!-- Start Header Area -->
+        <header class="default-header">
+            <nav class="navbar navbar-expand-lg  navbar-light">
+                <div class="container">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="img/rely_logo.png" alt="" height="30px" width="30px"> <span style="color: #fff;"> Sahyog Mantra</span>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white lnr lnr-menu"></span>
+                      </button>
+
+                      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li><a href="./Pages-inside/blog.html">Blogs</a></li>
+                            <li><a href="#portfolio">Places</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="./Pages-inside/About.html">About Us</a></li>
+                            <!-- <li><button data-bs-toggle="modal" data-bs-target="#loginModel">Login</button></li>
+                            <li><button data-bs-toggle="modal" data-bs-target="#registerModel">Register</button></li> -->
+                        </ul>
+                        <div class="d-flex" role="search">
+                            <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModel">Login	</button>
+                            <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModel">Register	</button>
+                          </div>
+                      </div>						
+                </div>
+            </nav>
+            
+<div class="modal fade" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+				<h5 class="modal-title d-flex align-items-center">
+				<i class="bi bi-person-circle fs-3 me-2">User Login</i>
+				</h5>
+				<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				<div class="mb-3">
+					<label class="form-label">Email address</label>
+					<input type="email" class="form-control shadow-none">
+				</div>
+				<div class="mb-4">
+					<label class="form-label">Password</label>
+					<input type="password" class="form-control shadow-none">
+				</div>
+				<div class="d-flex align-items-center justify-content-between mb-2">
+					<button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+					<a href="JavaScript: void(0)" class="text-secondary text-decoration-none" >Forgot Password</a>
+				</div>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Understood</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="registerModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    	
+    	<form>
+    		<div class="modal-header">
+        	<h5 class="modal-title d-flex align-items-center">
+        	<i class="bi bi-person-lines-fill fs-3 me-2">User Registration</i>
+        	</h5>
+        	<button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+      		<div class="modal-body">
+      			<span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">Note: Your details must match with your ID (Aadhaar card, passport, driving license, etc.) that will be required during check-in.
+    			</span>
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-6 ps-0 mb-3">
+    					<label class="form-label">Name</label>
+    					<input type="text" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 p-0">
+    					<label class="form-label">Email</label>
+    					<input type="email" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 ps-0 mb-3">
+    					<label class="form-label">Phone Number</label>
+    					<input type="number" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 p-0">
+    					<label class="form-label">Picture</label>
+    					<input type="file" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-12 p-0">
+    					<label class="form-label">Address</label>
+    					<textarea class="form-control shadow-none" rows="1"></textarea>
+    				</div>
+    				<div class="col-md-6 ps-0 mb-3">
+    					<label class="form-label">Pin Code</label>
+    					<input type="number" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 p-0">
+    					<label class="form-label">Date of Birth</label>
+    					<input type="number" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 ps-0 mb-3">
+    					<label class="form-label">Password</label>
+    					<input type="passport" class="form-control shadow-none">
+    				</div>
+    				<div class="col-md-6 p-0">
+    					<label class="form-label">Confirm Password</label>
+    					<input type="passport" class="form-control shadow-none">
+    				</div>
+    				<div class="text-center my-1">
+    					<button type="submit" class="btn btn-dark shadow-none">Register</button>
+    				</div>
+    			</div>
+    		</div>	
+        	
+    	</form>
+      
+    </div>
+  </div>
+</div>
+        </header>
+        <!-- End Header Area -->	
+            <!-- start banner Area -->
+            <!-- <section class="banner-area relative" id="home">	
+                <div class="overlay overlay-bg"></div>
+                <div class="container">
+                    <div class="row fullscreen d-flex align-items-center justify-content-center">
+                        <div class="banner-content col-lg-10">
+                            <h5 class="text-uppercase">Be the part of this Wonderful Journey</h5>
+                            <h1>
+                                Incredible India!				
+                            </h1>
+                            <a href="#" class="primary-btn text-uppercase">Explore Now</a>
+                        </div>											
+                    </div>
+                </div>
+            </section> -->
+            <section class="home banner-area relative" id="home">
+                <div class="overlay overlay-bg"></div>       
+                <div class="container">
+                    <div class="row fullscreen d-flex align-items-center justify-content-center">
+                        <div class="banner-content col-lg-10">
+                            <h5>adventure is worthwhile</h5>
+                            <h5>discover new places with us, adventure awaits</h5>
+                            <!-- <a href="#" class="btn">discover more</a> -->
+                            <h1>
+                               Sahyog Mantra!				
+                            </h1>
+                            <a href="#" class="primary-btn text-uppercase">Explore Now</a>
+                        </div>											
+                    </div>
+                </div>
+                <div class="controls">
+                    <span class="vid-btn active" data-src="videos/video6.mp4"></span>
+                    <span class="vid-btn" data-src="videos/Video2.mp4"></span>
+                    <span class="vid-btn" data-src="videos/Video3.mp4"></span>
+                    <span class="vid-btn" data-src="videos/Video4.mp4"></span>
+                    <span class="vid-btn" data-src="videos/Video5.mp4"></span>
+                </div>
+        
+                <div class="video-container">
+                    <video src="videos/video6.mp4" id="video-slider" loop autoplay muted></video>
+                </div>
+            </section>
+            <!-- End banner Area -->	
+            
+            <!-- End footer Area -->					
+        </div>
+
+        
+<script>
+
+    let videoBtn = document.querySelectorAll('.vid-btn');
+
+    videoBtn.forEach(btn => {
+        btn.addEventListener('click', ()=> {
+            document.querySelector('.controls .active').classList.remove('active');
+            btn.classList.add('active');
+            let src = btn.getAttribute('data-src')
+            document.querySelector('#video-slider').src = src;
+        });
+    });
+</script>
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>			
+          <script src="js/easing.min.js"></script>			
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>	
+        <script src="js/owl.carousel.min.js"></script>			
+        <script src="js/jquery.sticky.js"></script>			
+        <script src="js/jquery.nice-select.min.js"></script>			
+        <script src="js/parallax.min.js"></script>	
+        <script src="js/mail-script.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>	
+        <script src="js/main.js"></script>	
+    </body>
+</html>
+
+
+
